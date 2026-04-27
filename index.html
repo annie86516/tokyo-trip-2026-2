@@ -11,8 +11,6 @@
       --notion-gray: #f1f1ef;
       --notion-border: rgba(55, 53, 47, 0.09);
       --accent-orange: #d35400;
-      --blue-bg: #e7f3f8;
-      --blue-text: #096ead;
     }
 
     body {
@@ -23,7 +21,6 @@
       line-height: 1.6;
     }
 
-    /* 封面圖：選用日系楓葉質感圖 */
     .cover-photo {
       width: 100%;
       height: 280px;
@@ -50,10 +47,9 @@
       box-shadow: 0 0 0 8px var(--notion-bg);
     }
 
-    h1 { font-size: 36px; font-weight: 700; margin: 0 0 10px 0; color: #222; }
+    h1 { font-size: 36px; font-weight: 700; margin: 0 0 10px 0; }
     .subtitle { color: rgba(55, 53, 47, 0.6); margin-bottom: 30px; border-bottom: 1px solid var(--notion-border); padding-bottom: 20px; font-size: 15px; }
 
-    /* Notion Callout (按鈕區) */
     .callout {
       background: var(--notion-gray);
       padding: 16px 20px;
@@ -74,11 +70,8 @@
       color: var(--notion-text);
       font-size: 14px;
       font-weight: 500;
-      transition: background 0.2s;
     }
-    .btn:hover { background: #f7f7f5; border-color: #bbb; }
 
-    /* 資訊欄位 */
     .info-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -93,156 +86,110 @@
       border: 1px solid var(--notion-border);
     }
 
-    h2 { font-size: 1.3em; margin-top: 40px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--notion-border); padding-bottom: 5px;}
+    h2 { font-size: 1.3em; margin-top: 40px; border-bottom: 1px solid var(--notion-border); padding-bottom: 5px;}
 
-    /* 行程項目排版 */
     .day-block { margin-bottom: 25px; }
     .day-header { font-weight: 700; font-size: 17px; color: var(--accent-orange); margin-bottom: 6px; }
     .day-content { font-size: 15px; padding-left: 15px; border-left: 2px solid #eee; }
-    .map-tag {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 12px;
-      color: #007aff;
-      text-decoration: none;
-      font-weight: 600;
-    }
 
-    .warning-box {
-      background-color: #fff9e6;
-      border: 1px solid #ffe58f;
-      padding: 15px;
-      border-radius: 6px;
-      margin: 20px 0;
-      font-size: 14px;
-    }
-
-    /* 手機優化 */
     @media (max-width: 600px) {
       .info-grid { grid-template-columns: 1fr; }
       .container { padding: 0 20px; margin-top: -50px; }
       h1 { font-size: 28px; }
-      .page-icon { font-size: 60px; width: 100px; height: 100px; }
     }
   </style>
 </head>
 <body>
 
-  <img src="https://images.unsplash.com/photo-1528164344705-47542687990d?q=80&w=1200&auto=format&fit=crop" class="cover-photo" alt="Tokyo">
+  <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop" class="cover-photo">
 
   <div class="container">
-    <div class="page-icon">⛩️</div>
-    <h1>2026 東京日光賞楓之旅</h1>
-    <p class="subtitle">🍁 11/21 — 11/29 ・ 5位成員 ・ 全地鐵移動行程</p>
+    <div class="page-icon">🍁</div>
+    <h1>2026 東京日光賞楓之旅 (Update)</h1>
+    <p class="subtitle">🗓️ 11/21 — 11/29 ・ 分段住宿規劃：東京 ➔ 日光 ➔ 成田</p>
 
     <div class="callout">
       <span>🚀</span>
       <div class="btn-group">
-        <a href="#" class="btn">💰 共同記帳表單</a>
-        <a href="#" class="btn">🛒 想吃想買清單</a>
-        <a href="https://maps.google.com" target="_blank" class="btn">📍 行程地圖導航</a>
+        <a href="#" class="btn">💰 記帳表單</a>
+        <a href="#" class="btn">🛒 購物清單</a>
+        <a href="http://googleusercontent.com/maps.google.com/3" class="btn">📍 地圖導航</a>
       </div>
     </div>
 
     <div class="info-grid">
       <div class="info-box">
-        <strong style="display:block; margin-bottom:8px;">👥 航班資訊</strong>
+        <strong style="display:block; margin-bottom:8px;">🏡 住宿異動紀錄</strong>
         <div style="font-size: 13px;">
-          <b>批次 A (3人):</b> 11/21 ➔ 11/29<br>
-          小港 06:55 ➔ 成田 11:10<br><br>
-          <b>批次 B (2人):</b> 11/23 ➔ 11/29<br>
-          小港 08:00 ➔ 成田 12:10
+          • 11/21-26：東京市區<br>
+          • 11/26-28：日光 (2晚)<br>
+          • 11/28-29：成田機場周邊 (最後一晚)
         </div>
       </div>
       <div class="info-box">
-        <strong style="display:block; margin-bottom:8px;">🚆 交通/住宿</strong>
+        <strong style="display:block; margin-bottom:8px;">👥 航班摘要</strong>
         <div style="font-size: 13px;">
-          <b>住宿：</b> 11/21-26 東京 | 11/26-29 日光<br>
-          <b>方式：</b> 全程地鐵/鐵路 (不租車)<br>
-          <b>日光特急推薦：</b> Revaty 或 新幹線轉乘
+          • 批次 A (3人): 11/21 抵達<br>
+          • 批次 B (2人): 11/23 抵達<br>
+          • 全員於 11/29 13:00 返台
         </div>
       </div>
     </div>
 
-    <h2>🗓️ 每日詳細行程</h2>
+    <h2>🗓️ 每日行程規劃</h2>
 
     <div class="day-block">
-      <div class="day-header">Day 1 — 11/21 (四) 東京：下町散策</div>
+      <div class="day-header">Day 1 — 11/21 (四) 東京下町</div>
+      <div class="day-content">3 人抵達 → 谷根千老街散策。</div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">Day 2 — 11/22 (五) 賞楓秘境</div>
+      <div class="day-content">井之頭公園 → 吉祥寺 → 大田黑公園 (夜楓)。</div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">Day 3 — 11/23 (六) 全員會合</div>
+      <div class="day-content">2 人抵達 → 全員會合 → 明治神宮外苑銀杏。</div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">Day 4 — 11/24 (日) 名園之秋</div>
+      <div class="day-content">小石川後樂園 → 清澄白河咖啡散步。</div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">Day 5 — 11/25 (一) 購物日</div>
+      <div class="day-content">市區最終採購 / 預約日光行程票券。</div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">Day 6 — 11/26 (二) 移動：日光</div>
+      <div class="day-content">搭乘 Revaty 特急 → 日光逍遙園紅葉點燈。</div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">Day 7 — 11/27 (三) 日光深度遊</div>
+      <div class="day-content">東照宮 → 二荒山神社 → 憾滿之淵。</div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">Day 8 — 11/28 (四) 溫泉 ➔ 成田</div>
       <div class="day-content">
-        ✈️ 第一批 3 人抵達成田 (11:10) → 飯店寄放行李 → <b>谷根千散策</b> (谷中銀座、根津神社，感受老街氣息) → 住宿附近晚餐。
+        上午：日光江戶村或鬼怒川散步。<br>
+        下午：搭乘鐵路前往<b>成田機場周邊飯店</b> Check-in。<br>
+        晚上：機場周邊商場最後補貨或放鬆休息。
       </div>
     </div>
 
     <div class="day-block">
-      <div class="day-header">Day 2 — 11/22 (五) 東京：在地賞楓秘境</div>
+      <div class="day-header">Day 9 — 11/29 (五) 悠閒返台</div>
       <div class="day-content">
-        ☕ 悠閒早午餐 → <b>井之頭恩賜公園</b> (吉祥寺商圈) → 🍁 <b>大田黑公園</b> (極力推薦！荻窪站附近的日式庭園，賞夜楓點燈)。<br>
-        <a href="#" class="map-tag">📍 開啟 Google Maps 導航</a>
+        上午：在機場飯店享用早餐 → 搭乘接駁車前往航廈。<br>
+        ✈️ 13:00 成田機場起飛返台。
       </div>
     </div>
-
-    <div class="day-block">
-      <div class="day-header">Day 3 — 11/23 (六) 全員會合：銀杏大道</div>
-      <div class="day-content">
-        ✈️ 第二批 2 人抵達成田 (12:10) → 飯店會合 → 🍂 <b>明治神宮外苑銀杏林</b> (11月下旬名景) → 表參道/青山商圈 → 5人相聚晚餐。
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="day-header">Day 4 — 11/24 (日) 東京：名園秋色</div>
-      <div class="day-content">
-        🍁 <b>小石川後樂園</b> (迴遊式庭園賞楓) → ☕ <b>清澄白河</b> (咖啡廳巡禮、雜貨小店) → 🗼 眺望東京市區夜景。
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="day-header">Day 5 — 11/25 (一) 東京：自由採購日</div>
-      <div class="day-content">
-        🛍️ 依照「想吃想買清單」進行最終採購 (推薦新宿、澀谷或 Outlet) → 晚上整理行李，準備明日移動。
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="day-header">Day 6 — 11/26 (二) 轉移陣地：北上日光</div>
-      <div class="day-content">
-        🚆 前往日光 (推薦 Revaty 或是新幹線) → 飯店寄放行李 → 🍁 <b>逍遙園</b> (輪王寺旁，11月底日光市區賞楓首選)。
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="day-header">Day 7 — 11/27 (三) 日光：古蹟與靜謐淵谷</div>
-      <div class="day-content">
-        ⛩️ <b>日光東照宮 & 二荒山神社</b> → 🌊 <b>憾滿之淵</b> (非常幽靜的溪谷步道，賞楓且觀光客極少) → ♨️ 享受日光溫泉料理。
-        <br><a href="#" class="map-tag">📍 開啟 Google Maps 導航</a>
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="day-header">Day 8 — 11/28 (四) 日光：周邊探索</div>
-      <div class="day-content">
-        🎭 <b>日光江戶村</b> 或 ♨️ <b>鬼怒川溫泉老街</b> 散策 → 🍽️ 採買日光在地伴手禮 → 最後的溫泉聚會。
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="warning-box">
-        <b>⚠️ 歸途提醒：</b> 航班為 13:00。日光返回成田機場車程長，務必於 <b>早上 07:00 前</b> 離開飯店！
-      </div>
-      <div class="day-header">Day 9 — 11/29 (五) 返程日</div>
-      <div class="day-content">
-        清晨退房 → 搭乘首班特急返回東京/機場 → ✈️ 13:00 成田機場起飛 → 16:40 抵達小港機場。
-      </div>
-    </div>
-
-    <h2>✅ 出國前 Checklist</h2>
-    <ul style="font-size: 14px; color: #555;">
-      <li>🔴 日光飯店確認（賞楓季極早訂完）</li>
-      <li>🟡 購買日光周遊券或東京廣域周遊券</li>
-      <li>🔵 Visit Japan Web QR Code 截圖</li>
-      <li>🟣 手機 Suica 儲值、eSIM 準備完成</li>
-    </ul>
 
   </div>
-
 </body>
 </html>
