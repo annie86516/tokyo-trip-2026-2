@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 東京日光賞楓之旅</title>
+  <style>
+    /* Notion 簡潔風格設定 */
+    :root {
+      --notion-bg: #ffffff;
+      --notion-text: #37352f;
+      --notion-gray: #f1f1ef;
+      --notion-border: rgba(55, 53, 47, 0.09);
+      --accent-orange: #d35400;
+    }
+
+    body {
+      background-color: var(--notion-bg);
+      color: var(--notion-text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif;
+      margin: 0; padding: 0;
+      line-height: 1.5;
+    }
+
+    /* 頂部封面圖 */
+    .cover-photo {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      background: linear-gradient(to bottom, #ff9a9e 0%, #fecfef 100%); /* 預設漸層，你也可以換成圖片網址 */
+    }
+
+    .container {
+      max-width: 750px;
+      margin: -60px auto 100px;
+      padding: 0 40px;
+    }
+
+    /* 圓形 Icon */
+    .page-icon {
+      font-size: 78px;
+      background: white;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 { font-size: 40px; font-weight: 700; margin: 0 0 10px 0; }
+    .subtitle { color: rgba(55, 53, 47, 0.6); margin-bottom: 30px; border-bottom: 1px solid var(--notion-border); padding-bottom: 20px; }
+
+    /* Notion 的 Callout 區塊 (按鈕區) */
+    .callout {
+      background: var(--notion-gray);
+      padding: 16px;
+      border-radius: 4px;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .btn-group { display: flex; flex-wrap: wrap; gap: 8px; flex: 1; }
+    .btn {
+      padding: 4px 12px;
+      background: white;
+      border: 1px solid var(--notion-border);
+      border-radius: 4px;
+      text-decoration: none;
+      color: var(--notion-text);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .btn:hover { background: #f7f7f5; }
+
+    /* 並排資訊欄位 */
+    .info-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    h2 { font-size: 1.2em; border-bottom: 1px solid var(--notion-border); padding-bottom: 8px; margin-top: 30px; }
+
+    /* 行程項目 */
+    .day-item {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      border-left: 2px solid var(--notion-border);
+    }
+    .day-title { font-weight: 600; color: var(--accent-orange); margin-bottom: 5px; }
+    .day-content { font-size: 15px; color: #555; }
+
+    /* 手機排版優化 */
+    @media (max-width: 600px) {
+      .info-columns { grid-template-columns: 1fr; gap: 20px; }
+      .container { padding: 0 20px; margin-top: -40px; }
+      h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://images.unsplash.com/photo-1542044896530-05d85be9b11a?auto=format&fit=crop&q=80&w=1200" class="cover-photo">
+
+  <div class="container">
+    <div class="page-icon">🍁</div>
+    <h1>2026 東京日光賞楓之旅</h1>
+    <p class="subtitle">🗓️ 11/21 — 11/29 ・ 5位成員 ・ 全地鐵移動</p>
+
+    <div class="callout">
+      <span>💡</span>
+      <div class="btn-group">
+        <a href="#" class="btn">💰 共同記帳表單</a>
+        <a href="#" class="btn">🛒 購物清單</a>
+        <a href="https://maps.google.com" class="btn">📍 行程地圖</a>
+      </div>
+    </div>
+
+    <div class="info-columns">
+      <div>
+        <h2>👥 成員航班</h2>
+        <p style="font-size: 14px;">
+          <b>批次 A (3人):</b> 11/21-11/29<br>
+          BR108 小港 ➔ 成田 (11:10抵)
+        </p>
+        <p style="font-size: 14px;">
+          <b>批次 B (2人):</b> 11/23-11/29<br>
+          BR108 小港 ➔ 成田 (12:10抵)
+        </p>
+      </div>
+      <div>
+        <h2>🏡 住宿安排</h2>
+        <p style="font-size: 14px;">
+          <b>11/21-26:</b> 東京市區<br>
+          <b>11/26-29:</b> 日光市區 (賞楓飯店)
+        </p>
+      </div>
+    </div>
+
+    <h2>🗓️ 每日行程</h2>
+
+    <div class="day-item">
+      <div class="day-title">Day 1 — 11/21 (四) 抵達東京</div>
+      <div class="day-content">下午：谷根千老街散策。晚上：住宿周邊居酒屋晚餐。</div>
+    </div>
+
+    <div class="day-item">
+      <div class="day-title">Day 2 — 11/22 (五) 在地秘境</div>
+      <div class="day-content">上午：井之頭公園。下午：吉祥寺採買。晚上：大田黑公園（賞夜楓）。</div>
+    </div>
+
+    <div class="day-item">
+      <div class="day-title">Day 3 — 11/23 (六) 全員會合</div>
+      <div class="day-content">下午：成田接機第二批隊友。傍晚：明治神宮外苑銀杏林。</div>
+    </div>
+
+    <div class="day-item">
+      <div class="day-title">Day 6 — 11/26 (二) 轉移：日光</div>
+      <div class="day-content">早上：搭乘東武特急 Revaty。下午：逍遙園。晚上：溫泉飯店晚餐。</div>
+    </div>
+
+    <div class="day-item">
+      <div class="day-title">Day 7 — 11/27 (三) 世界遺產</div>
+      <div class="day-content">整日：日光東照宮、神橋、憾滿之淵。避開人潮享受靜謐氛圍。</div>
+    </div>
+
+    <div class="day-item">
+      <div class="day-title">Day 9 — 11/29 (五) 返台</div>
+      <div class="day-content">⚠️ 07:00 離開飯店。13:00 成田機場起飛。</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
